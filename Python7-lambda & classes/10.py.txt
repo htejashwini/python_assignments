@@ -1,0 +1,8 @@
+# Write a Python program to get the class name of an instance in Python.
+
+lass ClassName:
+  def get_class_name(self, instance):
+    return instance.__class__.__name__
+
+c = ClassName()
+print(c.get_class_name(20.32))

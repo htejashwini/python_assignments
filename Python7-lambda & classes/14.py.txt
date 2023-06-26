@@ -1,0 +1,4 @@
+# Write a Python program to find if a given string starts with a given character using Lambda.
+
+find_c = lambda string, char: string.startswith(char)
+print(find_c("Hello", "h"))

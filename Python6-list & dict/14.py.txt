@@ -1,0 +1,9 @@
+# Write a Python program to check a dictionary is empty or not.
+
+dict1 = {2: 20, 1: 10, 3: 30}
+empty_dic = {}
+
+res = not bool(dict1)
+res1 = not bool(empty_dic)
+print(res)
+print(res1)

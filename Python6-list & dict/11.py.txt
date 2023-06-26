@@ -1,0 +1,6 @@
+# Write a Python program to sort a dictionary by key.
+
+dict1 = {4: 10, 2: 30, 3: 20, 1: 40}
+
+sort_d = dict(sorted(dict1.items()))
+print(sort_d)

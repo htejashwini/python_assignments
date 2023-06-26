@@ -1,0 +1,12 @@
+# Write a Python class to reverse a string word by word. 
+# Input string : 'hello .py' 
+# Expected Output : '.py hello'
+
+class Reverse:
+  def reverse(self, str1):
+    char = str1.split()
+    res = char[::-1]
+    return ' '.join(res)
+
+c = Reverse()
+print(c.reverse('hello .py'))

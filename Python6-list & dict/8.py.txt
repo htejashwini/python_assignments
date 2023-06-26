@@ -1,0 +1,7 @@
+# write a Python program to sum all the items in a dictionary.
+
+dict1 = {1: 10, 2: 20, 3: 30}
+for key, value in dict1.items():
+    k = sum(dict1.keys())
+    v = sum(dict1.values())
+print(k + v)

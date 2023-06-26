@@ -1,0 +1,10 @@
+# Write a Python program that counts the number of elements within a list that are greater than 30.
+
+
+list = [21, 32, 25, 58, 69, 12, 3, 56, 30]
+count = 0
+for i in list:
+  if i>30:
+    count += 1
+  
+print(count)

@@ -1,0 +1,20 @@
+# Write a Python program to calculate the sum and average of n integer numbers (input from the user). Input 0 to finish
+
+num = []
+count = 0
+total = 0
+
+while True:
+    n = int(input("Enter an integer number (0 to finish): "))
+    if n == 0:
+        break
+    num.append(n)
+    count += 1
+    total += n
+
+if count == 0:
+  print("No numbers were entered")
+else:
+  average = total/count
+  print("Sum:", total)
+  print("Average:", average)

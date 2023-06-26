@@ -1,0 +1,12 @@
+# Write a Python class to get all possible unique subsets from a set of distinct integers # # Input : [4, 5, 6] 
+# Output : [[], [6], [5], [5, 6], [4], [4, 6], [4, 5], [4, 5, 6]]
+
+class Unique:
+  def get_subset(self, num):
+    subsets = [[]]
+    for n in num:
+      subsets += [curr_subset + [n] for curr_subset in subsets]
+    return subsets
+
+generator = Unique()
+print(generator.get_subset([4, 5, 6]))

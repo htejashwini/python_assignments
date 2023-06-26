@@ -1,0 +1,11 @@
+# You are given with a list of integer elements. Make a new list which will store square of elements of previous list.
+
+num = [2, 3, 4, 5, 6, 7]
+sq_n = []
+
+for i in num:
+    n = i**2
+    sq_n.append(n)
+
+print("Numbers: ", num)
+print("Square of numbers: ", sq_n)

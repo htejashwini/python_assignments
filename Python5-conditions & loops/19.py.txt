@@ -1,0 +1,18 @@
+# From a list containing ints, strings and floats, make three lists to store them separately
+
+lists = [1, 2, 3, 'Cat', 9.9, 5.9, 'Dog', 'Hat', 3.3]
+ints = []
+strings = []
+floats = []
+
+for i in lists:
+    if isinstance(i, int):
+        ints.append(i)
+    elif isinstance(i, str):
+        strings.append(i)
+    elif isinstance(i, float):
+        floats.append(i)
+
+print("Integers: ", ints)
+print("Strings: ", strings)
+print("Foating num: ", floats)

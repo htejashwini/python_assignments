@@ -1,0 +1,17 @@
+# 8) Write a Python program to check whether a given string contains a capital letter, a lower case letter, a number and a minimum length using lambda. Minimum length : 10 
+# input string: PaceWisd0m 
+# o/p: valid string
+
+def check_str(str1):
+  msg = [
+      lambda str1: any(x.isupper() for x in str1), 
+      lambda str1: any(x.islower() for x in str1), 
+      lambda str1: any(x.isdigit() for x in str1), 
+      lambda str1: len(str1) >= 10]
+  res = [x for x in [i(str1) for i in msg] if x!= True]
+  if not res:
+    res.append('Valid string')
+  return res
+
+s = input("Enter a string: ")
+print(check_str(s))

@@ -1,0 +1,13 @@
+# Write a Python program to remove duplicates from Dictionary.
+
+dict1 = {2: 20, 1: 10, 3: 30, 7: 20, 4: 40, 5: 50, 8: 10, 6: 10}
+print("Dict before removing duplicates: ", dict1)
+
+temp = []
+res = dict()
+for key, value in dict1.items():
+  if value not in temp:
+    temp.append(value)
+    res[key] = value
+
+print("Dict after removing duplicates: ", res)

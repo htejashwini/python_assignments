@@ -1,0 +1,6 @@
+# Write a Python program to remove a key from a dictionary.
+
+dict1 = {1: 10, 2: 20, 3: 30}
+k = int(input("Enter the key to delete: "))
+del dict1[k]
+print(dict1)

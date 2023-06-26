@@ -1,0 +1,14 @@
+# Write a Python program to check if all dictionaries in a list are empty or not. 
+# Sample list : [{},{},{}] 
+# Return value : True 
+# Sample list : [{1,2},{},{}] 
+# Return value : False
+
+l1 = [{}, {}, {}]
+l2 = [{1,2}, {}, {}]
+
+res1 = all(not bool(dict) for dict in l1)
+res2 = all(not bool(dict) for dict in l2)
+
+print(res1)
+print(res2)

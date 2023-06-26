@@ -1,0 +1,9 @@
+# Write a Python program to find the highest 3 values in a dictionary.
+
+def highest_val(dict1):
+  values = list(dict1.values())
+  sort = sorted(values, reverse = True)
+  highest_three = sort[:3]
+  return highest_three
+
+print(highest_val({'a': 100, 'b': 200, 'c': 300, 'd': 400, 'e': 600, 'f': 50 }))

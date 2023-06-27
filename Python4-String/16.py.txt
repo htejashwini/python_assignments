@@ -1,0 +1,8 @@
+# Write a Python program to print the index of the character in a string.
+
+
+def index(str):
+  for i, char in enumerate(str):
+    print(char, i)
+
+print(index('Hello'))

@@ -1,0 +1,6 @@
+# Write a Python program to convert a string in a list.
+
+
+str = "hello"
+list = [i for i in str]
+print(list)

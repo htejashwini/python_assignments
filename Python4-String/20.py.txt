@@ -1,0 +1,10 @@
+# Write a Python program to remove all consecutive duplicates of a given string.
+
+def duplicates(str):
+  res = " "
+  for char in str:
+    if char not in res:
+      res += char
+  return res
+
+print(duplicates("pop"))

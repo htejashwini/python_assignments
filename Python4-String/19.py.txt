@@ -1,0 +1,12 @@
+# Write a Python program to find smallest and largest word in a given string.
+
+def s_and_l(str):
+  list = str.split()
+  small_word = min(list, key=len)
+  larg_word = max(list, key=len)
+  return small_word, larg_word
+
+str = "Python program to find smallest and largest word"
+smallest, largest = s_and_l(str)
+print("Smallest word: ", smallest)
+print("Largest word: ", largest)

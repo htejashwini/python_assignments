@@ -1,0 +1,11 @@
+# 
+Write a Python program to count repeated characters in a string. Sample string: 'thequickbrownfoxjumpsoverthelazydog' Expected output : o 4 e 3 u 2 h 2 r 2 t 2
+
+def count(str):
+  c = {}
+  for i in str:
+    if str.count(i)>1:
+      c[i] = str.count(i)
+  return c
+
+print(count('thequickbrownfoxjumpsoverthelazydog'))

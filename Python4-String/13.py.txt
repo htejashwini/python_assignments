@@ -1,0 +1,6 @@
+# Write a Python program to check whether a string starts with specified characters.
+
+def string(str, specified_char):
+  return str.startswith(specified_char)
+
+print(string('Hello', 'hel'))
